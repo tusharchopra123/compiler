@@ -1,0 +1,126 @@
+
+  
+  
+
+
+.main {
+    display: flex;
+    width: 100%;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    border-left: 0.5px solid grey;
+    scrollbar-color: #333330fa;
+}
+.headingDisplay{
+    width: 95%;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    height: 6vh;
+    padding: 1vh;
+    margin-left: 1vh;
+    background: #333330fa !important;
+    border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar {
+width: 11px;
+}
+textarea {
+scrollbar-width: thin;
+scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+textarea::-webkit-scrollbar-track {
+background: var(--scrollbarBG);
+}
+textarea::-webkit-scrollbar-thumb {
+background-color: var(--thumbBG) ;
+border-radius: 6px;
+border: 3px solid var(--scrollbarBG);
+}
+div::-webkit-scrollbar {
+    width: 11px;
+}
+div {
+scrollbar-width: thin;
+scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+div::-webkit-scrollbar-track {
+background: var(--scrollbarBG);
+}
+div::-webkit-scrollbar-thumb {
+background-color: var(--thumbBG) ;
+border-radius: 6px;
+border: 3px solid var(--scrollbarBG);
+}
+.buttonRun{
+    background: #e31d3b;
+    border: none;
+    color: white;
+    width: 22%;
+    font-size: 20px;
+    padding: 1%;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 2%;
+}
+.buttonInput{
+    border:none;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.buttonInput > span{
+    margin-right: 5%;
+}
+.buttonRun >span{
+    margin-left: 1%;
+}
+.select{
+    font-size: 15px;
+    margin-right: 2%;
+    cursor: pointer;
+    outline:none;
+    border-radius: 10px;
+}
+.headingMain{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.sectionAbove{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    padding-bottom:1% ;
+}
+.innerSection1{
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+}
+.output{
+    border: none;
+    width: 97%;
+    padding: 1vh;
+    height: 38vh;
+    border: none;
+    scrollbar-color: #333330fa;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
