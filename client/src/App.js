@@ -54,7 +54,7 @@ int main() {
       input:input
     }
     const {data} = await axios({
-      url: `${baseUrl}/api/compiler/run`,
+      url: `/api/compiler/run`,
       method: 'POST',
       data:payload,
       })
@@ -62,7 +62,7 @@ int main() {
           // console.log(response.status)
       let intervalId;
       intervalId = setInterval(async()=>{
-        const {data:dataRes} = await axios.get(`${baseUrl}/api/compiler/status`,{ params: { id: data.jobId } })
+        const {data:dataRes} = await axios.get(`/api/compiler/status`,{ params: { id: data.jobId } })
         const {success,job,error} = dataRes;
         console.log(error)
         console.log(success)
