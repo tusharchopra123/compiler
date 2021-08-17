@@ -10,7 +10,7 @@ const compileFileCpp = (filepath)=>{
     const codeId = path.basename(filepath).split('.')[0];
     const outPath = path.join(outputPath, `${codeId}.out`)
     return new Promise((resolve,reject)=>{
-        exec(`g++ ${filepath} -o ${outPath} && cd ${outputPath} && ${codeId}.out < ${codeId}.txt`, (error,stdout,stderr)=>{
+        exec(`g++ ${filepath} -o ${outPath} && cd ${outputPath} && ./${codeId}.out < ${codeId}.txt`, (error,stdout,stderr)=>{
             console.log(error)
             console.log(stdout)
             error && reject({error,stderr});
